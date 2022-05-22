@@ -11,6 +11,7 @@ struct printedPublications {
     int Pages;
 };
 
+
 printedPublications *DataBase = NULL; // Указатель начала списка - базы данных:
 
 printedPublications InpInfo(char cs){ // Ввод информации о телефонном абоненте варианта cs :
@@ -34,6 +35,7 @@ void OutSubscriberInfo(printedPublications scb){  // Вывод информац
     } else cout << scb.Magazine.Name << ' ' << scb.Magazine.Format;
     cout << " | " << scb.Pages << endl;
 }
+
 
 printedPublications* FoundSubscriberNum(int num){ /* Поиск в списке абонента с заданным порядковым номером num в списке (нумеруем, начиная с 0):   */
     printedPublications* p = DataBase;
